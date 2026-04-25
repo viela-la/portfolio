@@ -1,4 +1,4 @@
-console.log('IT’S ALIVE!');
+console.log('ITS ALIVE!');
 
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
@@ -80,3 +80,52 @@ const isDarkMode = matchMedia("(prefers-color-scheme: dark)").matches;
 
 // const autoOption = select.querySelector('option[value="light dark"]');
 // autoOption.textContent = isDarkMode ? "Automatic" : "Automatic (Light)";
+
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+    console.log(response);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+    const data = await response.json();
+    return data;
+
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+    return null;
+  }
+}
+
+// fetchJSON('lib/projects.json').then(data => {
+//   console.log(data);
+// });
+
+export function renderProjects(project, containerElement, headingLevel = 'h2') {
+  // write javascript that will allow dynamic heading levels based on previous function
+  containerElement.innerHTML = '';
+  for (let p of project) {
+
+  const article = document.createElement('article');
+  article.innerHTML = `
+    <h3>${p.title}</h3>
+    <img src="${p.image}" alt="${p.title}">
+    <p>${p.description}</p>
+`;
+
+
+   const heading = document.createElement(headingLevel);
+   heading.textContent = p.title;
+  
+ containerElement.appendChild(article);
+  }
+}
+
+export async function fetchGitHubData(username) {
+  // return statement here
+  return fetchJSON(`https://api.github.com/users/${username}`);
+
+}
+
+

@@ -84,3 +84,29 @@ label.color-scheme{
   font: system-ui;
   font-size: 80%;
 }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.stats-grid dt {
+  grid-row: 1;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stats-grid dd {
+  grid-row: 2;
+  margin: 0;
+  text-align: center;
+}
+
+#profile-stats {
+  cursor: pointer;
+}
+
+#profile-stats.collapsed .stats-grid {
+  display: none;
+}

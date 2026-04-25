@@ -1,0 +1,74 @@
+[
+    {
+        "title": "The Bigger the Better",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Using grocery store data, I measured how price changes with product weight. By binning weights and taking the mean price of each bin, I was able to compare price fluctuations between different stores for largely similar products."
+    },
+        {
+        "title": "Eos quam odio natus?",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Illo sint, blanditiis debitis vel dicta magnam perspiciatis! Unde magnam atque porro deserunt accusantium repellendus? Laboriosam adipisci sunt, voluptates officia culpa assumenda consequatur quisquam accusamus nesciunt quia nulla, accusantium harum."
+    },
+    {
+        "title": "Heart Disease",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Through a Bayesian network, we were able to predict the presence of heart disease within a patient using health factors such as heartrate, blood pressure, and blood sugar with high accuracy."
+    },
+    {
+        "title": "Exploring the Relationship Between the Calories and Rating of a Recipe",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "By analyzing the nutritional data of various foods on recipe.com, I found that recipes with less calories tend to receive higher ratings. I also built a prediction model that classified recipe ratings according to its nutritional and instructional info."
+    },
+    {
+        "title": "Nutritional Differences Between Plant-Based and Animal Burger Patties",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "We collected data about various plant-based and animal patties from different brands and compared variability in nutritional values such as calories, saturated fat, and sodium."
+    },
+    {
+        "title": "Incidunt temporibus tempore hic?",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Dolorum dolor aut, porro, aliquam culpa quod corrupti doloribus ea at, adipisci itaque placeat unde eaque. Dolor dolore, doloremque, itaque ratione consectetur suscipit ex quae consequatur, tenetur animi neque amet!"
+    },
+    {
+        "title": "Exercitationem porro corporis hic.",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Magnam laboriosam aliquam distinctio a quam praesentium nulla nam vel vitae harum ea tempore, sed, molestias laudantium, reiciendis nemo pariatur nisi labore accusantium! Necessitatibus quis minima nostrum ipsa optio blanditiis."
+    },
+    {
+        "title": "Dolores voluptate placeat quasi.",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Laudantium ullam veniam quibusdam. Similique modi labore natus earum, nostrum a? Est libero, dolorum aliquam, dolorem distinctio repellendus delectus commodi perferendis quidem ex consequatur ipsa quisquam, id asperiores nulla quibusdam!"
+    },
+    {
+        "title": "Minima facilis repellendus delectus!",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Porro ipsa, amet provident magni assumenda distinctio repellendus incidunt fuga, molestiae doloremque veniam sed dolor. Eveniet optio, dolore modi, provident dicta nihil, voluptatem vero magnam libero commodi quam. Veritatis, consequuntur!"
+    },
+    {
+        "title": "Necessitatibus itaque quo porro?",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Voluptatibus vero adipisci architecto? Laudantium numquam pariatur sint earum alias, quisquam consequuntur velit, natus molestias esse omnis minima nulla beatae expedita repudiandae? Deserunt sequi ratione unde. Adipisci similique exercitationem distinctio!"
+    },
+    {
+        "title": "Pariatur saepe voluptatem fuga!",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Quam quisquam cum quidem at optio quia provident culpa dolorem, veritatis, unde excepturi modi a necessitatibus libero dolor! Nisi, maiores perferendis error architecto nostrum possimus. Exercitationem corrupti molestias sapiente nobis?"
+    },
+    {
+        "title": "Perferendis nemo soluta quos.",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Quasi neque voluptatem, magni repudiandae id dolor voluptates temporibus. Possimus repellat repudiandae eos natus vero tempore voluptatibus, debitis harum neque, eum, laborum sunt voluptatum incidunt repellendus sequi sit alias ducimus!"
+    }
+]
