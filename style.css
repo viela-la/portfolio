@@ -110,3 +110,62 @@ label.color-scheme{
 #profile-stats.collapsed .stats-grid {
   display: none;
 }
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
+
+
+.year {
+  font-family: Baskerville;
+  font-variant-numeric: oldstyle-nums;
+}
+.legend {
+  display: grid;
+  font-size: 0.9rem;
+  list-style: none;
+  border: 0.1em solid oklch(65.067% 0.06093 341.695);
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  flex: 1;
+}
+.legend li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  gap: 0.4rem;
+}
+.legend .swatch {
+  width: 12px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 3px;
+  display: inline-block;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+.container {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  justify-content: center;
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+.selected {
+    --color: oklch(74.959% 0.13963 348.799) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+
+}
