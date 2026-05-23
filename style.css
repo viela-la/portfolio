@@ -215,6 +215,9 @@ circle {
   transition: 200ms;
   transform-origin: center;
   transform-box: fill-box;
+  @starting-style {
+    r: 0;
+  }
 }
 
 circle:hover {
@@ -239,3 +242,108 @@ circle.selected {
   animation: marching-ants 2s linear infinite;
 }
 
+.commits-div label {
+  display: flex;
+  gap: 1em;
+  align-items: baseline;
+}
+#commit-time {
+  margin-left: auto;
+}
+
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+  }
+
+  .file-dots {
+    grid-column: 2;
+    display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.2em;
+  padding-top: 0.6em;
+  margin-left: 1em;
+}
+}
+
+.file-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.file-meta {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.4rem;
+}
+.file-lines {
+  font-size: 0.85rem;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.15rem;
+
+}
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color);
+  border-radius: 50%;
+}
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 2rem;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
+}
+
+#scrolly-files {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+    > * {
+    flex: 1;
+  }
+}
+
+#files-steps {
+  position: relative;
+}
+
+#files-vis {
+  position: sticky;
+  top: 2rem;
+  left: 0;
+  bottom: auto;
+  height: 10vh;
+}
+.step {
+  height: 12vh;
+}

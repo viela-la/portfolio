@@ -14,11 +14,21 @@
     <div id="stats">
         <dl class="stats-grid"></dl>
     </div>
-    <h2>Commits by time of day</h2>
+    <!-- <div id="commits-div">
+        <label class="commit-filter"> Show commits until:
+            <input type="range" id="commit-progress" min="0" max="100" >
+            <time id="slider-commit-time"></time>
+        </label>
+    </div> -->
+    <h2>2026: A Commit Odyssey</h2>
 
-    <div id="chart"></div>
+    <div id="scrolly-1">
+        <div id="scatter-story"></div>
+        
+        <div id="scatter-plot">
+            <div id="chart"></div>
 
-    <dl id="commit-tooltip" class="info tooltip" hidden>
+<dl id="commit-tooltip" class="info tooltip" hidden>
         <dt>Commit</dt>
         <dd>
             <a href="" id="commit-link" target="_blank"></a>
@@ -38,7 +48,15 @@
 </dl>
     <p id="selection-count">No commits selected</p>
     <dl id="language-breakdown" class="stats-grid"></dl>
+        </div>
+    </div>
+    <div id="scrolly-files">
+        <div id="files-steps"></div>
 
+        <div id="files-vis">
+            <dl id="files"></dl>
+        </div>
+    </div>
     <script type="module" src="main.js"></script>
 </body>
 </html>
